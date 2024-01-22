@@ -11,6 +11,6 @@ class SuperStr(str):
     def is_palindrom(self):
         center = int(len(self) / 2)
         for _ in range(0, center, 1):
-            if not self[_] == self[-1 - 0]:
+            if not self[_] == self[-1 - _]:
                 return False
         return True
